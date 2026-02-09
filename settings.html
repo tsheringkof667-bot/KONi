@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONi Bank – Settings</title>
+</head>
+<body>
+
+<script>
+if (!sessionStorage.getItem("currentUser")) location.href="index.html";
+</script>
+
+<h2>Account Settings</h2>
+
+<input id="newPass" type="password" placeholder="New Password">
+<button onclick="changePassword()">Change Password</button>
+
+<h3>Avatar</h3>
+<button onclick="setAvatar('👤')">👤</button>
+<button onclick="setAvatar('😎')">😎</button>
+
+<a href="dashboard.html">Back</a>
+
+<script src="js/avatar.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

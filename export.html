@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONi Bank – Export</title>
+</head>
+<body>
+
+<script>
+if (!sessionStorage.getItem("currentUser")) location.href="index.html";
+</script>
+
+<h2>Export Data</h2>
+
+<button onclick="exportAll()">Export All Account Data</button>
+
+<a href="dashboard.html">Back</a>
+
+<script src="tools/export-import.js"></script>
+</body>
+</html>

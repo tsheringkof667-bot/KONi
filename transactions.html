@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONi Bank – Transactions</title>
+</head>
+<body>
+
+<script>
+if (!sessionStorage.getItem("currentUser")) location.href="index.html";
+</script>
+
+<h2>Transaction History</h2>
+<div id="list"></div>
+
+<button onclick="exportCSV()">Export CSV</button>
+
+<a href="dashboard.html">Back</a>
+
+<script src="js/transactions.js"></script>
+</body>
+</html>

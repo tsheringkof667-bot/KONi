@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONi Bank – Loan</title>
+</head>
+<body>
+
+<script>
+if (!sessionStorage.getItem("currentUser")) location.href="index.html";
+</script>
+
+<h2>Loan Application</h2>
+
+<input id="amount" placeholder="Loan Amount">
+<input id="months" placeholder="Months">
+<button onclick="applyLoan()">Apply</button>
+
+<p id="emi"></p>
+
+<a href="dashboard.html">Back</a>
+
+<script src="js/banking.js"></script>
+</body>
+</html>

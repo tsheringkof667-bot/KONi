@@ -1,0 +1,14 @@
+@media(max-width:600px){
+  body{
+    padding:12px;
+  }
+
+  .card{
+    padding:14px;
+  }
+
+  button{
+    width:100%;
+    margin-top:8px;
+  }
+}

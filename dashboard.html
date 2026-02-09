@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KONi Bank – Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+if (!sessionStorage.getItem("currentUser")) location.href="index.html";
+</script>
+
+<h2>KONi Bank Dashboard</h2>
+<p id="user"></p>
+
+<div class="card">
+  <h3>Balance</h3>
+  <p id="balance">Loading...</p>
+</div>
+
+<div class="card">
+  <a href="loan.html">Apply Loan</a> |
+  <a href="transactions.html">Transactions</a> |
+  <a href="notifications.html">Notifications</a> |
+  <a href="settings.html">Settings</a>
+</div>
+
+<button onclick="logout()">Logout</button>
+
+<script src="js/banking.js"></script>
+<script>
+document.getElementById("user").innerText =
+  "Logged in as: " + sessionStorage.getItem("currentUser");
+
+function logout(){
+  sessionStorage.clear();
+  location.href="index.html";
+}
+</script>
+
+</body>
+</html>
